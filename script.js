@@ -735,8 +735,7 @@ window.onload = function ()
            for (l=0; l<restaurants[i].grades.length; l++){
            var dates = `<br>Date: <b> ${restaurants[i].grades[l].date.$date}</b>`;
            info = info + dates;
-};
-            
+            };
            var marker = L.marker(latlng, {
                icon: Icon}).bindPopup(`restaurant: <b>${restaurants[i].name}</b><br>Street:
                                        <b> ${restaurants[i].address.street} </b>
@@ -747,3 +746,4 @@ window.onload = function ()
                this.closePopup();});
            marker.addTo(map);}
        }
+ 
